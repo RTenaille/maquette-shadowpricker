@@ -47,6 +47,13 @@ header{
     width: 43%;
     height: 30vh;
 }
+.banniereInscri{
+    background-image: url("images/OrkHacker2LittleScreen.png");
+    background-repeat: no-repeat;
+    width: 43%;
+    height: 30vh;
+    background-color: var(--darkred);
+}
 .logIn{
     display: flex;
     flex-direction: column;
@@ -54,6 +61,7 @@ header{
     justify-content: space-evenly;
     padding: 3%;
 }
+
 h1{
     font-family: var(--decorative-font);
     color: var(--yellow);
@@ -102,7 +110,12 @@ h2{
     color: var(--yellow);
     margin-bottom: 1%;
 }
+.generatorButton{
+    width: fit-content;
+    height: 8vh;
+    padding: 1%;
 
+}
 /*********************************************************FOOTER*******************/
 footer{
     margin-top: 20%;
@@ -120,9 +133,19 @@ footer{
         background-image: url("images/OrkHacker1.png");
         height: 60vh;
     }
+    .banniereInscri{
+        background-image: url("images/OrkHacker2.png");
+        height: 60vh;
+    }
     h1{
         font-size: 3.7em;
     }
     /*********************************MAIN*******************/
+    .generatorButton{
+        width: fit-content;
+        height: 15vh;
+        font-size: 2em;
+    
+    }
     /*************************************FOOTER***************/
 }
