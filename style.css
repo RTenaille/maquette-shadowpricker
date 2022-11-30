@@ -1,0 +1,128 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/************************************GENERAL****************************************/
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+/*font-family: 'Syne Mono', monospace; police pour H1*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*font-family: 'Roboto', sans-serif;*/
+
+:root{
+    --main-font: 'Roboto', sans-serif;
+    --decorative-font: 'Syne Mono', monospace;
+
+    /*color*/
+
+    --black: #201d1d;
+    --darkred: #700b15;
+    --white: #fefefe;
+    --yellow: #f9b00b;
+
+}
+
+/*******************************************BODY*********************************/
+body{
+    background-color: var(--black);
+    font-family: var(--main-font);
+    color: var(--white);
+    font-size: 0.7em;
+}
+p{
+    text-align: justify;
+}
+
+/***********************************************HEADER*****************************/
+header{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 1%;
+    margin-top: 3%;
+    justify-content: space-evenly;
+}
+.banniereAcceuil{
+    background-image: url("images/OrkHacker1LittleScreen.png");
+    background-repeat: no-repeat;
+    width: 43%;
+    height: 30vh;
+}
+.logIn{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkred);
+    justify-content: space-evenly;
+    padding: 3%;
+}
+h1{
+    font-family: var(--decorative-font);
+    color: var(--yellow);
+    font-size: 1.7em;
+}
+.logButton{
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--black);
+    width: fit-content;
+    padding: 4%;
+}
+.logButton:hover{
+    color: var(--yellow);
+}
+.SRLogo{
+    background-image: url("images/SRLogoFigure.png");
+    background-repeat: no-repeat;
+    width: 80%;
+    height: 10vh;
+
+}
+/*****************************************************MAIN***********************/
+main{
+    display: flex;
+    margin: 2%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.sectionMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10%;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--darkred);
+    margin: 2%;
+    padding: 2%;
+}
+h2{
+    color: var(--yellow);
+    margin-bottom: 1%;
+}
+
+/*********************************************************FOOTER*******************/
+footer{
+    margin-top: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+@media (min-width: 800px) {
+    /************************BODY****************************/
+    body{
+        font-size: 2em;
+    }
+    /****************************HEADER************************/
+    .banniereAcceuil{
+        background-image: url("images/OrkHacker1.png");
+        height: 60vh;
+    }
+    h1{
+        font-size: 3.7em;
+    }
+    /*********************************MAIN*******************/
+    /*************************************FOOTER***************/
+}
